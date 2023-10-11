@@ -1,0 +1,28 @@
+body{
+    background-image: url(https://images.pexels.com/photos/1454288/pexels-photo-1454288.jpeg?cs=srgb&dl=pexels-brett-sayles-1454288.jpg&fm=jpg);
+    background-size: cover;
+    color: rgb(20, 30, 20);
+}
+#loadButton{
+    background-color:black;
+    color: aliceblue;
+    font-size: larger;
+    height: 50px;
+border: solid blue 4px;
+border-radius: 30%;
+}
+input{
+    border: solid 3px red;
+}
+#sub{
+    border: solid 3px black ;
+    border-radius: 40%;
+}
+#sub:hover{
+background-color: coral;
+color: aqua;
+}
+#loadButton:hover{
+    background-color: yellowgreen;
+    color: aliceblue;
+}

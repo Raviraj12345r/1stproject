@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Full Name Example</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+  <button id="loadButton">Load Data</button>
+<p id="dataParagraph"></p>
+  <form id="nameForm">
+    <input type="text" id="firstName"placeholder="Enter Your First Name">
+    <input type="text" id="middleName" placeholder="Enter Your middle Name">
+    <input type="text" id="lastName" placeholder="Enter Your Last Name">
+    <button id="sub" type="submit">Submit</button>
+  </form>
+  <script>
+     const loadButton = document.getElementById('loadButton');
+const dataParagraph = document.getElementById('dataParagraph');
+
+loadButton.addEventListener('click', () => {
+  dataParagraph.textContent = 'Welcome to the world of JavaScript';
+})
+  </script>
+
+  <script>
+    const form = document.getElementById('nameForm');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission
+
+      const firstName = document.getElementById('firstName').value;
+      const middleName = document.getElementById('middleName').value;
+      const lastName = document.getElementById('lastName').value;
+
+      const fullName = firstName + " " + middleName + " " + lastName;
+      alert("Full Name: " + fullName);
+    });
+  </script>
+</body>
+</html>
